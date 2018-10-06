@@ -1,0 +1,125 @@
+﻿body {
+  font-family: 'Source Code Pro', 'Alegreya', sans-serif;
+  font-size: 24px;
+  color: white;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  padding-top: 90px;
+  padding-left: 100px;
+}
+
+.background {
+  height: 100vh;
+}
+  
+.backgrnd-1 {
+  height: 330px;
+  background-color: #2f3338;
+}
+
+.backgrnd-2 {
+  min-height:800px;
+  background-color: #cdd1d6;
+}
+
+.random-page {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+}
+
+.container {
+  position: relative;
+  width: 800px;
+  top: -100px; 
+  left: 12%;
+  font-size: 24px;
+}
+
+.inner {
+  min-height: 70px;
+  background-color: white;
+  padding: 40px 40px;
+}
+
+.article {
+  visibility: none;
+  min-height: 80px;
+  margin-bottom: 20px;
+  padding: 20px 30px;
+  color: #2f3338;
+  background-color: #cdd1d6;
+  border: 1px solid grey;
+  box-shadow: 3px 3px 3px 0 #2f3338;
+}
+
+.article h3 {
+  color: black;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.inner a {
+  text-decoration: none;
+}
+
+input[type=text] {
+  font-family: inherit;
+  margin-left: 50px;
+  margin-bottom: 40px;
+  width: 250px;
+  box-sizing: border-box;
+  border: 2px solid #2f3338;
+  border-radius: 3px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('https://github.com/snyggme/m3-solution/blob/master/site/weather_api/glass.png?raw=true');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  margin-left: 0;
+  outline: none;
+  border: 2px solid #026ef4;
+  width: 100%;
+}
+
+input[type=text]::placeholder {
+   color: #2f3338;
+}
+
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
